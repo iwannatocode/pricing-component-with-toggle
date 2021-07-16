@@ -11,7 +11,7 @@
 
 body{
     
-    background: url(images/bg-bottom.svg) 10px 400px/300px 300px no-repeat, url(images/bg-top.svg)  no-repeat right;
+    background: url(../images/bg-bottom.svg) 10px 400px/300px 300px no-repeat, url(../images/bg-top.svg)  no-repeat right;
     background-color: hsl(240, 78%, 98%);
     font-weight: 700;
     font-family: fontMedium;
