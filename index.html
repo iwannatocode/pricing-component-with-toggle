@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+<h2>Our Pricing</h2>
+  <div class="cont_check">
+    <span class="aa">Annually</span>
+    <span class="switch_cont"><label class="switch" id="event"><input type="checkbox" checked><span class="slider"></span></label></span>
+    <span class="aa">Monthly</span>
+  </div>
+  
+<div class="cont_card">
+    <div class="card card1">
+      <h3 class="type">Basic</h3>
+      <h3 class="price">$19.99</h3>
+      <h3 class="store">500 GB Storage</h3>
+      <h3 class="users">2 Users Allowed</h3>
+      <h3 class="capacity">Send up to 3 GB</h3>
+      <button class="btn">Learn More</button>
+    </div>
+    <div class="card card2">
+      <h3 class="type">Professional</h3>
+      <h3 class="price">$24.99</h3>
+      <h3 class="store">1 TB Storage</h3>
+      <h3 class="users">5 Users Allowed</h3>
+      <h3 class="capacity">Send up to 10 GB</h3>
+      <button class="btn btn2">Learn More</button>
+    </div>
+    <div class="card card3">
+      <h3 class="type">Master</h3>
+      <h3 class="price">$39.99</h3>
+      <h3 class="store">2 TB Storage</h3>
+      <h3 class="users">10 Users Allowed</h3>
+      <h3 class="capacity">Send up to 20 GB</h3>
+      <button class="btn">Learn More</button>
+    </div>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Iwanna</a>.
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+
+    var key = true;
+
+    $("input").change(function () { 
+
+        if( key ){
+
+            $(".card1 .price").html("$199.99");
+            $(".card2 .price").html("$249.99");
+            $(".card3 .price").html("$399.99");
+
+            key = false
+        }
+        else{
+
+            $(".card1 .price").html("$19.99");
+            $(".card2 .price").html("$24.99");
+            $(".card3 .price").html("$39.99");
+
+            key = true;
+        }
+
+
+    });
+    
+
+
+  </script>
+</body>
+</html>
